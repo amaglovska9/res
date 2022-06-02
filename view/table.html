@@ -1,0 +1,725 @@
+<link rel="stylesheet" href="assets/css/table.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+
+
+<br><br><br>
+<table class="table table-dark table-bordered table-hover table-responsive">
+    <thead>
+    <tr>
+        <th colspan="2"><i class="fa fa-soccer-ball-o text-white" style="font-size:36px"></i></th>
+        <th colspan="8">Вкупно</th> 
+        <th colspan="8" class="main" >Дома</th>
+        <th colspan="8" class="main">Гости</th>
+    </tr>
+    <tr>
+        <td>Поз</td>
+        <td>Екипа</td>
+        <td>Бр.</td>
+        <td>Пб</td>
+        <td>Н</td>
+        <td>З</td>
+        <td>ДГ</td>
+        <td>ПрГ</td>
+        <td>Раз</td>
+        <td>ПОЕ</td>
+
+        <td class="main">Бр.</td>
+        <td class="main">Пб</td>
+        <td class="main">Н</td>
+        <td class="main">З</td>
+        <td class="main">ДГ</td>
+        <td class="main">ПрГ</td>
+        <td class="main">Раз</td>
+        <td class="main">ПОЕ</td>
+        
+        <td class="main">Бр.</td>
+        <td class="main">Пб</td>
+        <td class="main">Н</td>
+        <td class="main">З</td>
+        <td class="main">ДГ</td>
+        <td class="main">ПрГ</td>
+        <td class="main">Раз</td>
+        <td class="main">ПОЕ</td>
+    </tr>
+</thead>
+<tbody>
+    <tr data-ng-repeat="bodovi in statistcs">
+        <td>{{$index + 1}}</td>
+        <td>{{bodovi.team}}</td>
+        <td>{{bodovi.Matches}}</td>
+        <td>{{bodovi.Win}}</td>
+        <td>{{bodovi.Equal}}</td>
+        <td>{{bodovi.Lost}}</td>
+        <td>{{bodovi.Scoredgoals}}</td>
+        <td>{{bodovi.Receivedgoals}}</td>
+        <td>{{bodovi.Difference}}</td>
+        <td>{{bodovi.Points}}</td>
+
+        <td class="main">{{bodovi.MatchesHome}}</td>
+        <td class="main">{{bodovi.WinHome}}</td>
+        <td class="main">{{bodovi.EqualHome}}</td>
+        <td class="main">{{bodovi.LostHome}}</td>
+        <td class="main">{{bodovi.ScoredgoalsHome}}</td>
+        <td class="main">{{bodovi.ReceivedgoalsHome}}</td>
+        <td class="main">{{bodovi.DifferenceHome}}</td>
+        <td class="main">{{bodovi.PointsHome}}</td>
+
+        <td class="main">{{bodovi.Matches - bodovi.MatchesHome}}</td>
+        <td class="main">{{bodovi.Win - bodovi.WinHome}}</td>
+        <td class="main">{{bodovi.Equal - bodovi.EqualHome}}</td>
+        <td class="main">{{bodovi.Lost - bodovi.LostHome}}</td>
+        <td class="main">{{bodovi.Scoredgoals - bodovi.ScoredgoalsHome}}</td>
+        <td class="main">{{bodovi.Receivedgoals - bodovi.ReceivedgoalsHome}}</td>
+        <td class="main">{{bodovi.Difference - bodovi.DifferenceHome}}</td>
+        <td class="main">{{bodovi.Points - bodovi.PointsHome}}</td>
+    </tr>
+</tbody>
+</table>
+    <!-- <tr>
+        <td class="bg-primary">1</td>
+        <td>Милан</td>
+        <td>27</td>
+        <td>21</td>
+        <td>3</td>
+        <td>3</td>
+        <td>64</td>
+        <td>17</td>
+        <td>47</td>
+        <td>66</td>
+        <td class="main">13</td>
+        <td class="main">10</td>
+        <td class="main">1</td>
+        <td class="main">2</td>
+        <td class="main">36</td>
+        <td class="main">9</td>
+        <td class="main">27</td>
+        <td class="main">31</td>
+        <td class="main">14</td>
+        <td class="main">11</td>
+        <td class="main">2</td>
+        <td class="main">1</td>
+        <td class="main">28</td>
+        <td class="main">8</td>
+        <td class="main">20</td>
+        <td class="main">35</td>
+    </tr> -->
+  
+        <!-- <td class="bg-primary">2</td>
+        <td>Интер</td>
+        <td>26</td>
+        <td>18</td>
+        <td>6</td>
+        <td>2</td>
+        <td>70</td>
+        <td>20</td>
+        <td>50</td>
+        <td>60</td>
+        <td class="main">13</td>
+        <td class="main">10</td>
+        <td class="main">3</td>
+        <td class="main">0</td>
+        <td class="main">36</td>
+        <td class="main">7</td>
+        <td class="main">29</td>
+        <td class="main">33</td>
+        <td class="main">13</td>
+        <td class="main">8</td>
+        <td class="main">3</td>
+        <td class="main">2</td>
+        <td class="main">34</td>
+        <td class="main">13</td>
+        <td class="main">21</td>
+        <td class="main">27</td>
+    </tr>
+    <tr>
+        <td class="bg-primary">3</td>
+        <td>Наполи</td>
+        <td>25</td>
+        <td>14</td>
+        <td>8</td>
+        <td>3</td>
+        <td>49</td>
+        <td>18</td>
+        <td>31</td>
+        <td>50</td>
+        <td class="main">12</td>
+        <td class="main">6</td>
+        <td class="main">5</td>
+        <td class="main">1</td>
+        <td class="main">27</td>
+        <td class="main">10</td>
+        <td class="main">17</td>
+        <td class="main">23</td>
+        <td class="main">13</td>
+        <td class="main">8</td>
+        <td class="main">3</td>
+        <td class="main">2</td>
+        <td class="main">22</td>
+        <td class="main">8</td>
+        <td class="main">14</td>
+        <td class="main">27</td>         
+    </tr>
+
+    <tr>
+        <td class="bg-primary">4</td>
+        <td>Јувентус</td>
+        <td>27</td>
+        <td>13</td>
+        <td>8</td>
+        <td>6</td>
+        <td>44</td>
+        <td>34</td>
+        <td>10</td>
+        <td>47</td>
+        <td class="main">14</td>
+        <td class="main">7</td>
+        <td class="main">3</td>
+        <td class="main">4</td>
+        <td class="main">21</td>
+        <td class="main">16</td>
+        <td class="main">5</td>
+        <td class="main">24</td>
+        <td class="main">13</td>
+        <td class="main">6</td>
+        <td class="main">5</td>
+        <td class="main">2</td>
+        <td class="main">23</td>
+        <td class="main">18</td>
+        <td class="main">5</td>
+        <td class="main">23</td>
+    </tr>
+
+    
+    <tr>
+        <td class="bg-success">5</td>
+        <td>Рома</td>
+        <td>27</td>
+        <td>13</td>
+        <td>6</td>
+        <td>8</td>
+        <td>46</td>
+        <td>34</td>
+        <td>12</td>
+        <td>45</td>
+        <td class="main">14</td>
+        <td class="main">7</td>
+        <td class="main">3</td>
+        <td class="main">4</td>
+        <td class="main">25</td>
+        <td class="main">19</td>
+        <td class="main">6</td>
+        <td class="main">24</td>
+        <td class="main">13</td>
+        <td class="main">6</td>
+        <td class="main">3</td>
+        <td class="main">4</td>
+        <td class="main">21</td>
+        <td class="main">15</td>
+        <td class="main">6</td>
+        <td class="main">21</td>
+    </tr>
+
+    
+    <tr>
+        <td class="bg-warning">6</td>
+        <td>Аталанта</td>
+        <td>24</td>
+        <td>14</td>
+        <td>3</td>
+        <td>7</td>
+        <td>38</td>
+        <td>27</td>
+        <td>11</td>
+        <td>45</td>
+        <td class="main">13</td>
+        <td class="main">9</td>
+        <td class="main">2</td>
+        <td class="main">2</td>
+        <td class="main">22</td>
+        <td class="main">10</td>
+        <td class="main">12</td>
+        <td class="main">29</td>
+        <td class="main">11</td>
+        <td class="main">5</td>
+        <td class="main">1</td>
+        <td class="main">5</td>
+        <td class="main">16</td>
+        <td class="main">17</td>
+        <td class="main">-1</td>
+        <td class="main">16</td>
+    </tr>
+
+    <tr>
+        <td>7</td>
+        <td>Лацио</td>
+        <td>25</td>
+        <td>13</td>
+        <td>3</td>
+        <td>9</td>
+        <td>35</td>
+        <td>32</td>
+        <td>3</td>
+        <td>42</td>
+        <td class="main">12</td>
+        <td class="main">7</td>
+        <td class="main">1</td>
+        <td class="main">4</td>
+        <td class="main">18</td>
+        <td class="main">15</td>
+        <td class="main">3</td>
+        <td class="main">22</td>
+        <td class="main">13</td>
+        <td class="main">6</td>
+        <td class="main">2</td>
+        <td class="main">5</td>
+        <td class="main">17</td>
+        <td class="main">17</td>
+        <td class="main">0</td>
+        <td class="main">20</td>
+    </tr>
+
+    <tr>
+        <td>8</td>
+        <td>Фиорентина</td>
+        <td>26</td>
+        <td>12</td>
+        <td>4</td>
+        <td>10</td>
+        <td>24</td>
+        <td>21</td>
+        <td>3</td>
+        <td>40</td>
+        <td class="main" >12</td>
+        <td class="main">5</td>
+        <td class="main">2</td>
+        <td class="main">5</td>
+        <td class="main">10</td>
+        <td class="main">10</td>
+        <td class="main">0</td>
+        <td class="main">17</td>
+        <td class="main">14</td>
+        <td class="main">7</td>
+        <td class="main">2</td>
+        <td class="main" >5</td>
+        <td class="main">14</td>
+        <td class="main">11</td>
+        <td class="main">3</td>
+        <td class="main">23</td>
+    </tr>
+
+    
+    <tr>
+        <td>9</td>
+        <td>Верона</td>
+        <td>26</td>
+        <td>8</td>
+        <td>11</td>
+        <td>7</td>
+        <td>34</td>
+        <td>37</td>
+        <td>-3</td>
+        <td>35</td>
+        <td class="main">13</td>
+        <td class="main">5</td>
+        <td class="main">7</td>
+        <td class="main">1</td>
+        <td class="main">18</td>
+        <td class="main">10</td>
+        <td class="main">8</td>
+        <td class="main">22</td>
+        <td class="main">13</td>
+        <td class="main">3</td>
+        <td class="main">4</td>
+        <td class="main">6</td>
+        <td class="main">16</td>
+        <td class="main">27</td>
+        <td class="main">-11</td>
+        <td class="main">13</td>
+    </tr>
+
+    <tr>
+        <td>10</td>
+        <td>Сасуоло</td>
+        <td>26</td>
+        <td>7</td>
+        <td>12</td>
+        <td>7</td>
+        <td>25</td>
+        <td>30</td>
+        <td>-5</td>
+        <td>33</td>
+        <td class="main">13</td>
+        <td class="main">3</td>
+        <td class="main">5</td>
+        <td class="main">5</td>
+        <td class="main">10</td>
+        <td class="main">16</td>
+        <td class="main">-6</td>
+        <td class="main">14</td>
+        <td class="main">13</td>
+        <td class="main">4</td>
+        <td class="main">7</td>
+        <td class="main">2</td>
+        <td class="main">15</td>
+        <td class="main">14</td>
+        <td class="main">1</td>
+        <td class="main">19</td>     
+    </tr>
+
+    <tr>
+        <td>11</td>
+        <td>Торино</td>
+        <td>27</td>
+        <td>6</td>
+        <td>12</td>
+        <td>9</td>
+        <td>37</td>
+        <td>38</td>
+        <td>-1</td>
+        <td>30</td>
+        <td class="main">14</td>
+        <td class="main">4</td>
+        <td class="main">6</td>
+        <td class="main">4</td>
+        <td class="main">22</td>
+        <td class="main">17</td>
+        <td class="main">5</td>
+        <td class="main">18</td>
+        <td class="main">13</td>
+        <td class="main">2</td>
+        <td class="main">6</td>
+        <td class="main">5</td>
+        <td class="main">15</td>
+        <td class="main">21</td>
+        <td class="main">-6</td>
+        <td class="main">12</td>     
+    </tr>
+
+    <tr>
+        <td>12</td>
+        <td>Болоња</td>
+        <td>24</td>
+        <td>8</td>
+        <td>6</td>
+        <td>10</td>
+        <td>39</td>
+        <td>43</td>
+        <td>-4</td>
+        <td>30</td>
+        <td class="main">12</td>
+        <td class="main">5</td>
+        <td class="main">3</td>
+        <td class="main">4</td>
+        <td class="main">21</td>
+        <td class="main">18</td>
+        <td class="main">3</td>
+        <td class="main">18</td>
+        <td class="main">12</td>
+        <td class="main">3</td>
+        <td class="main">3</td>
+        <td class="main">6</td>
+        <td class="main">18</td>
+        <td class="main">25</td>
+        <td class="main">-7</td>
+        <td class="main">12</td>     
+    </tr>
+
+    <tr>
+        <td>13</td>
+        <td>Емполи</td>
+        <td>25</td>
+        <td>9</td>
+        <td>3</td>
+        <td>13</td>
+        <td>33</td>
+        <td>37</td>
+        <td>-4</td>
+        <td>30</td>
+        <td class="main">12</td>
+        <td class="main">4</td>
+        <td class="main">3</td>
+        <td class="main">5</td>
+        <td class="main">20</td>
+        <td class="main">20</td>
+        <td class="main">0</td>
+        <td class="main">15</td>
+        <td class="main">13</td>
+        <td class="main">5</td>
+        <td class="main">0</td>
+        <td class="main">8</td>
+        <td class="main">13</td>
+        <td class="main">17</td>
+        <td class="main">-4</td>
+        <td class="main">15</td>     
+    </tr>
+
+    <tr>
+        <td>14</td>
+        <td>Удинезе</td>
+        <td>25</td>
+        <td>5</td>
+        <td>10</td>
+        <td>10</td>
+        <td>28</td>
+        <td>45</td>
+        <td>-17</td>
+        <td>25</td>
+        <td class="main">13</td>
+        <td class="main">3</td>
+        <td class="main">6</td>
+        <td class="main">4</td>
+        <td class="main">18</td>
+        <td class="main">24</td>
+        <td class="main">-6</td>
+        <td class="main">15</td>
+        <td class="main">12</td>
+        <td class="main">2</td>
+        <td class="main">4</td>
+        <td class="main">6</td>
+        <td class="main">10</td>
+        <td class="main">21</td>
+        <td class="main">-11</td>
+        <td class="main">10</td>     
+    </tr>
+
+    <tr>
+        <td>15</td>
+        <td>Специја</td>
+        <td>27</td>
+        <td>6</td>
+        <td>6</td>
+        <td>15</td>
+        <td>27</td>
+        <td>44</td>
+        <td>-17</td>
+        <td>24</td>
+        <td class="main">14</td>
+        <td class="main">4</td>
+        <td class="main">2</td>
+        <td class="main">8</td>
+        <td class="main">14</td>
+        <td class="main">19</td>
+        <td class="main">-5</td>
+        <td class="main">14</td>
+        <td class="main">13</td>
+        <td class="main">2</td>
+        <td class="main">4</td>
+        <td class="main">7</td>
+        <td class="main">13</td>
+        <td class="main">25</td>
+        <td class="main">-12</td>
+        <td class="main">10</td>     
+    </tr>
+
+    <tr>
+        <td>16</td>
+        <td>Самподорија</td>
+        <td>26</td>
+        <td>5</td>
+        <td>8</td>
+        <td>13</td>
+        <td>29</td>
+        <td>60</td>
+        <td>-31</td>
+        <td>23</td>
+        <td class="main">13</td>
+        <td class="main">3</td>
+        <td class="main">4</td>
+        <td class="main">6</td>
+        <td class="main">15</td>
+        <td class="main">25</td>
+        <td class="main">-10</td>
+        <td class="main">13</td>
+        <td class="main">13</td>
+        <td class="main">2</td>
+        <td class="main">4</td>
+        <td class="main">7</td>
+        <td class="main">14</td>
+        <td class="main">35</td>
+        <td class="main">-21</td>
+        <td class="main">10</td>     
+    </tr>
+    <tr>
+        <td>17</td>
+        <td>Каљари</td>
+        <td>24</td>
+        <td>6</td>
+        <td>4</td>
+        <td>14</td>
+        <td>28</td>
+        <td>41</td>
+        <td>-13</td>
+        <td>22</td>
+        <td class="main">12</td>
+        <td class="main">5</td>
+        <td class="main">1</td>
+        <td class="main">6</td>
+        <td class="main">18</td>
+        <td class="main">18</td>
+        <td class="main">0</td>
+        <td class="main">16</td>
+        <td class="main">12</td>
+        <td class="main">1</td>
+        <td class="main">3</td>
+        <td class="main">8</td>
+        <td class="main">10</td>
+        <td class="main">23</td>
+        <td class="main">-13</td>
+        <td class="main">6</td>         
+    </tr>
+    <tr>
+        <td class="bg-danger">18</td>
+        <td>Венеција</td>
+        <td>25</td>
+        <td>3</td>
+        <td>12</td>
+        <td>10</td>
+        <td>22</td>
+        <td>32</td>
+        <td>-10</td>
+        <td>21</td>
+        <td class="main">12</td>
+        <td class="main">2</td>
+        <td class="main">6</td>
+        <td class="main">4</td>
+        <td class="main">10</td>
+        <td class="main">12</td>
+        <td class="main">-2</td>
+        <td class="main">12</td>
+        <td class="main">13</td>
+        <td class="main">1</td>
+        <td class="main">6</td>
+        <td class="main">6</td>
+        <td class="main">12</td>
+        <td class="main">20</td>
+        <td class="main">-8</td>
+        <td class="main">9</td>         
+    </tr>
+    <td class="bg-danger">19</td>
+    <td>Џенова</td>
+    <td>26</td>
+    <td>5</td>
+    <td>4</td>
+    <td>17</td>
+    <td>25</td>
+    <td>47</td>
+    <td>-22</td>
+    <td>19</td>
+    <td class="main">13</td>
+    <td class="main">2</td>
+    <td class="main">1</td>
+    <td class="main">10</td>
+    <td class="main">12</td>
+    <td class="main">31</td>
+    <td class="main">-19</td>
+    <td class="main">7</td>
+    <td class="main">13</td>
+    <td class="main">3</td>
+    <td class="main">3</td>
+    <td class="main">7</td>
+    <td class="main">13</td>
+    <td class="main">16</td>
+    <td class="main">-3</td>
+    <td class="main">12</td>         
+</tr>
+</tr>
+<td class="bg-danger">20</td>
+<td>Салернитана</td>
+<td>26</td>
+<td>4</td>
+<td>5</td>
+<td>17</td>
+<td>15</td>
+<td>55</td>
+<td>-40</td>
+<td>17</td>
+<td class="main">13</td>
+<td class="main">2</td>
+<td class="main">3</td>
+<td class="main">8</td>
+<td class="main">8</td>
+<td class="main">25</td>
+<td class="main">-17</td>
+<td class="main">9</td>
+<td class="main">13</td>
+<td class="main">2</td>
+<td class="main">2</td>
+<td class="main">9</td>
+<td class="main">7</td>
+<td class="main">30</td>
+<td class="main">-23</td>
+<td class="main">8</td>         
+</tr>
+ -->
+
+
+ <br><br><br>
+
+
+
+<div class="row">
+<div class="col-sm-1">
+    <div class='box bg-primary'></div>
+</div>
+<div class="col-sm-6">
+    <h5>= Квалификација - Лига на Прваци (групна фаза)</h5>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-1">
+    <div class="box bg-warning"></div>
+</div>
+<div class="col-sm-6">
+    <h5>= Квалификација - Европска Лига (групна фаза)</h5>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-1">
+    <div class="box bg-success"></div>
+</div>
+<div class="col-sm-6">
+    <h5>= Квалификација - Европска Конференциска Лига (квалификации)</h5>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-1">
+    <div class="box" style="background-color: darkred;"></div>
+</div>
+<div class="col-sm-6">
+    <h5><h5>= Испаѓање - Првенство</h5></h5>
+</div>
+</div>
+<br>
+<!-- <button  class="myBtn" onclick="topFunction()" title="Go to top">Top</button> -->
+
+<br>
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/SportskiOblozuvalniciEvrotip" role="button"
+          ><i class="fa fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fa fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fa fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://z-p3.www.instagram.com/evrotip/?hl=en" role="button"
+          ><i class="fa fa-instagram"></i
+        ></a>
+      </section>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <b>© Евротип | Спортски обложувалници 2022</b>
+    </div>
+  </footer>

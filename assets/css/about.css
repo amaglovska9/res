@@ -1,0 +1,129 @@
+body
+{
+    background-image: url('../img/aboutpozadina.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  * {
+      margin: 0px; 
+      padding: 0px; 
+      box-sizing: border-box;
+  }
+  
+  body, html {
+      height: 100%;
+      font-family: Poppins-Regular, sans-serif;
+  }
+  
+  a {
+      font-family: Poppins-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+  
+  a:focus {
+      outline: none !important;
+  }
+  
+  a:hover {
+      text-decoration: none;
+      color: #57b846;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+      margin: 0px;
+  }
+  
+  p {
+      font-family: Poppins-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+  }
+  
+  ul, li {
+      margin: 0px;
+      list-style-type: none;
+  }
+  
+  
+  input {
+      outline: none;
+      border: none;
+  }
+  
+  textarea {
+    outline: none;
+    border: none;
+  }
+  
+.w3-top{
+    visibility: visible;
+}
+.naslov
+{
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Serif ;
+    font-weight: 100;
+    font-weight: bold;
+    color: white;
+}
+.naslov:hover
+{
+    font-size: 35px;
+    font-weight: bold;
+    color:rgba(103, 124, 182, 0.795);
+}
+
+.aboutus{
+    align-items: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    color: rgb(36, 35, 35);
+    font-weight: bold;
+    margin-left: 20px;
+    color: black;
+    background-color: rgba(156, 169, 204, 0.795);
+    padding: 5px;
+
+}
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+.dc
+{
+    justify-content: center;
+}
+@media screen and (max-width: 650px){
+    .naslov{
+        padding: 20px;
+        margin-top: 10%;
+    }
+}
+

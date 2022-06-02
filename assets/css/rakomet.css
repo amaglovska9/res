@@ -1,0 +1,171 @@
+body
+{
+    background-color:black;
+}
+.w3-top{
+    visibility: visible;
+}
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  * {
+      margin: 0px; 
+      padding: 0px; 
+      box-sizing: border-box;
+  }
+  
+  body, html {
+      height: 100%;
+      font-family: Poppins-Regular, sans-serif;
+  }
+  
+  a {
+      font-family: Poppins-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+  
+  a:focus {
+      outline: none !important;
+  }
+  
+  a:hover {
+      text-decoration: none;
+      color: #57b846;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+      margin: 0px;
+  }
+  
+  p {
+      font-family: Poppins-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+  }
+  
+  ul, li {
+      margin: 0px;
+      list-style-type: none;
+  }
+  
+  
+  input {
+      outline: none;
+      border: none;
+  }
+  
+  textarea {
+    outline: none;
+    border: none;
+  }
+  
+.container{
+    justify-content: center;
+    align-items: center;
+}
+.subject
+{
+    color: white;
+    justify-content: center;
+    margin-left: 10px;
+}
+.rk
+{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans Regular';
+    color: white;
+}
+.rk:hover
+{
+    background-color:rgb(58, 105, 158);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.btn
+{
+    font-size: 20px;
+    font-weight: inherit;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    
+}
+
+.sliki:hover
+{
+border: solid 12px;
+border-radius: 20px;
+color: rgb(58, 105, 158);
+
+}
+
+.pagination
+{
+    justify-content: center;
+}
+.pagination a {
+    color: rgb(255, 255, 255);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .pagination a.active {
+    background-color:rgb(58, 105, 158);
+    color: white;
+  }
+  
+  .pagination a:hover:not(.active) {
+    background-color: rgb(58, 105, 158); 
+    color: white; 
+    font-weight: bold;
+    } 
+  
+  @media screen and (max-width: 650px){
+    .container{
+        margin-top: 15%;
+        justify-content: center;
+    }
+    h1
+    {
+        background-color:  rgb(58, 105, 158);
+    }
+    img{
+        justify-content: center;
+        width: 260px;
+    }
+    
+    .subject{
+        align-items: center;
+        font-size: 13px;
+    }
+    button{
+        justify-content: center;
+    }
+
+ }

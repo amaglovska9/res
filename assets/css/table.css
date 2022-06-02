@@ -1,0 +1,138 @@
+.table{
+    width: 40%;
+    position: center;
+    margin-left: 300px;
+}
+.w3-top{
+  visibility: visible;
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+a {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #57b846;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0px;
+}
+
+p {
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+}
+
+ul, li {
+    margin: 0px;
+    list-style-type: none;
+}
+
+
+input {
+    outline: none;
+    border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+body
+{
+    margin: 0;
+    font-weight: 100;
+    background: radial-gradient(#247a4f,#e01f1fd3);
+    -webkit-overflow-Y: hidden;
+    -moz-overflow-Y: hidden;
+    -o-overflow-Y: hidden;
+    overflow-y: hidden;
+    -webkit-animation: fadeIn 1 1s ease-out;
+    -moz-animation: fadeIn 1 1s ease-out;
+    -o-animation: fadeIn 1 1s ease-out;
+    animation: fadeIn 1 1s ease-out;
+}
+/* Boi za odredeni pozicii */
+tbody tr:nth-child(1) td:nth-child(1) {
+    background: rgb(50, 50, 223);
+  }
+  tbody tr:nth-child(2) td:nth-child(1) {
+    background: rgb(50, 50, 223);
+  }
+  tbody tr:nth-child(3) td:nth-child(1) {
+    background: rgb(50, 50, 223);
+  }
+  tbody tr:nth-child(4) td:nth-child(1) {
+    background: rgb(50, 50, 223);
+  }
+  tbody tr:nth-child(5) td:nth-child(1) {
+    background: orange;
+  }
+  tbody tr:nth-child(6) td:nth-child(1) {
+    background: #105837;
+  }
+  tbody tr:nth-child(18) td:nth-child(1) {
+    background: darkred;
+  }
+  tbody tr:nth-child(19) td:nth-child(1) {
+    background:darkred;
+  }
+  tbody tr:nth-child(20) td:nth-child(1) {
+    background: darkred;
+  }
+@media screen and (max-width: 650px){
+    .table{
+    margin-top: 10%;
+    margin-left: 0%;
+    width: 100%;
+    }
+    .date{
+        display: none;
+    }
+    .dontshow{
+        display: none;
+    }
+   
+    }
+
+.row{
+    align-items: center;
+    justify-content: center;
+}
+h5{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:  "Lucida Console", "Courier New", monospace;
+}

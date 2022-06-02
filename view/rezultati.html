@@ -1,0 +1,52 @@
+
+<link rel="stylesheet" href="assets/css/rezultati.css">
+
+
+<div class="container" ng-hide="hideit">
+	<img src="assets/img/italyflag.png" alt="" width="60">
+
+<select name="kolo" id="kolo" data-ng-model="searchbykolo">
+	<option value="">Италија - Серија А</option>
+	<option value="1">Прво Коло</option>
+	<option value="2">Второ Коло</option>
+	<option value="3">Трето Коло</option>
+	<option value="4">Четврто Коло</option>
+</select>
+
+</div>
+
+<table class="table table-responsive" style="width:70%">
+	<thead>
+		<tr>
+			<th  class="hide">Коло</th>
+			<th  class="hide">Датум</th>
+			<th class="hide">Време</th>
+			<th>Домакин</th>
+			<th>Гостин</th>
+			<th>Полувреме</th>
+			<th>Краен резултат</th>
+			<th>Измени</th>
+			<th class="hide">Избришете резултат</th>
+			
+
+		</tr>
+	</thead>
+	<tbody>
+		<tr data-ng-repeat="match in natprevari | filter:{kolo:searchbykolo}">
+			<td class="hide">{{match.kolo}}</td>
+			<td class="hide">{{match.datum}}</td>
+			<td class="hide">{{match.vreme}}</td>
+			<td>{{match.tim1}}</td>
+			<td>{{match.tim2}}</td>
+			<td>{{match.poluvreme}}</td>
+			<td>{{match.postignati_golovi_tim1 + "-" + match.postignati_golovi_tim2}}</td>
+			<td title="Измени"><button type="button" class="btn btn-outline-light" ng-click="editRow(row.id)">Измени</button></td>
+			<td title="Избриши" class="hide"><button type="button" class="btn" data-ng-click="deleteRow('model_natprevar.php', match.natprevar_id)"><i class="r fa fa-trash"></i></button></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<div ng-controller="RedirectURLCtrl">
+	<a href="#!novnatprevar" ng-click="RedirectToURL()"><input class="button" id="x" type="submit" value="Нов Натпревар"></a>
+  </div>
+<br><br><br>

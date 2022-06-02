@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+    <style>
+    
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 0px;
+    
+    }
+    
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    img{
+        opacity: 0.8;
+    }
+    .firsttext {
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      font-family:  'Times New Roman', Times, serif;
+      color: white;
+      font-weight: 300;
+    }
+    .firsttext:hover{
+        background:rgb(27, 68, 66);
+    }
+    .firstbutton{
+      position: absolute;
+      top: 57%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      font-size: 17px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white;
+      font-weight: 200;
+      background: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+    .firstbutton:hover{
+    background: rgb(11, 70, 62);
+    }
+    .secondtext {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: left;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      font-family:  'Times New Roman', Times, serif;
+      color: white;
+      font-weight: 300;
+    }
+    .secondtext:hover{
+        background:rgb(27, 68, 66);
+    }
+    .secondbutton{
+        position: absolute;
+      top: 57%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 17px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white;
+      font-weight: 200;
+      background: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+    .secondbutton:hover{
+        background: rgb(11, 70, 62);
+    
+    }
+    .thirdtext{
+      position: absolute;
+      top: 50%;
+      left: 85%;
+      text-align: left;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      font-family:  'Times New Roman', Times, serif;
+      color: white;
+      font-weight: 300;
+    }
+    .thirdtext:hover{
+        background:rgb(27, 68, 66);
+    }
+    .thirdbutton
+    {
+      position: absolute;
+      top: 57%;
+      left: 85%;
+      transform: translate(-50%, -50%);
+      font-size: 17px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white;
+      font-weight: 200;
+      background: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+    .thirdbutton:hover{
+        background: rgb(11, 70, 62);
+    
+    }
+    
+    </style>
+</head>
+<body>
+
+    
+    <div class="row">
+        <div class="column">
+          <img src="../img/1.jfif" alt="" style="width:100%">
+          <h2 class="firsttext">EDITORIAL</h2> 
+          <a href="editorial.html"><button type="button" class="firstbutton">View more</button></a>
+        </div>
+        <div class="column">
+          <img src="../img/2.jfif" alt="" style="width:100%">
+          <h2 class="secondtext">FOOD & SERVE</h2> 
+          <button type="button" class="secondbutton">View more</button>
+        </div>
+        <div class="column">
+            <img src="../img/3.jpg" alt="" style="width:100%"> 
+            <h2 class="thirdtext">BAKED GOODS</h2> 
+            <button type="button" class="thirdbutton">View more</button>
+        </div>
+      </div>
+</body>
+</html>

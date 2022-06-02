@@ -1,0 +1,74 @@
+
+<link rel="stylesheet" href="assets/css/novnatprevar.css">
+
+<div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h1>Додадете нов натпревар</h1>      
+    </div>
+    <form action="" method="POST">
+        <div class="row clearfix">
+          <label for="kolo"><b>Коло</b></label>
+          <div class="input_field">
+          <input type="text" id="kolo" placeholder="Внесете коло..." name="kolo" data-ng-model="kolo" required >  
+          </div>
+        </div>
+        <div class="row clearfix">
+          <label for="datum"><b>Датум</b></label>
+          <div class="input_field">
+            <input type="date" id="datum" name="datum" data-ng-model="datum" required>
+          </div>
+        </div>
+        <div class="row clearfix">
+          <label for="vreme"><b>Време</b></label>
+          <div class="input_field">
+            <input type="time"  id="vreme" name="vreme" data-ng-model="vreme" required>
+          </div>
+        </div>
+      <div class="row clearfix">
+          <label for="tim1"><b>Домакин</b></label> <br>
+          <div class="input_field">
+            <select name="tim1" id="tim1" data-ng-model="tim1" required>
+              <option value="" >Избери тим 1</option>
+              <option data-ng-repeat="tim in team"  value="{{tim.team_name}}"> {{tim.team_name}}</option>
+             </select>
+          </div>
+        </div>
+        <div class="row clearfix">
+          <label for="tim2"><b>Гостин</b></label> <br>
+          <div class="input_field">
+            <select name="tim2" id="tim2" data-ng-model="tim2" required>
+              <option value="">Избери тим 2</option>
+              <option data-ng-repeat="tim in team" value="{{tim.team_name}}"> {{tim.team_name}}</option>  
+             </select>
+          </div>
+        </div>
+        <div class="row clearfix">
+          <label for="poluvreme"><b>Полувреме</b></label> <br>
+          <div class="input_field">
+            <input type="text"  id="poluvreme" placeholder="Внесете конечен резултат во прво полувреме..." name="poluvreme" data-ng-model="poluvreme">
+          </div>
+        </div>
+      <div class="row clearfix">
+        <label for="postignati_golovi_tim1"><b>Голови Домакин</b></label>
+        <div class="input_field">
+          <input type="text"  id="postignati_golovi_tim1" placeholder="Внесете ги постигнатите голови на домаќинот..." name="postignati_golovi_tim1" data-ng-model="postignati_golovi_tim1" required>  
+        </div>
+        </div>
+        <div class="row clearfix">
+        <label for="postignati_golovi_tim2"><b>Голови Гостин</b></label>
+        <div class="input_field">
+          <input type="text" id="postignati_golovi_tim2" placeholder="Внесете ги постигнатите голови на гостинот..." name="postignati_golovi_tim2" data-ng-model="postignati_golovi_tim2" required>
+        </div>
+        </div>
+        <br>
+      <input class="button" type="submit" value="Зачувај" data-ng-click="addNatprevar(kolo, datum, vreme, tim1, tim2, poluvreme, postignati_golovi_tim1, postignati_golovi_tim2)">
+      <div class="alert alert-danger" ng-show="showSuccess">
+        <button type="button" class="close" data-ng-click="switchBool('showSuccess')">×</button> {{successText}}
+      </div>
+    </form>
+  </div>
+</div>
+
+<br>
+

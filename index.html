@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дома</title>
+    <!--Bootstrap v5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--AngularJS-->
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/routes.js"></script>
+
+    <!-- Css Connections -->
+    <link rel="stylesheet" href="assets/css/index.css">
+
+
+   <!--Link za fafa icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    /* .w3-row-padding img {margin-bottom: 12px} */
+    .w3-sidebar {width: 120px;background: #222;}
+    #main {margin-left: 120px}
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    
+    </style>
+
+
+  <script>
+    var app = angular.module('RedirectURLApp', []);
+    app.controller('RedirectURLCtrl', function($scope, $window) {
+      $scope.RedirectToURL = function() {
+        var host = $window.location.host;
+        var landingUrl = "view/novnatprevar.html";
+        alert(landingUrl);
+        $window.location.href = landingUrl;
+      };
+    });
+  </script>
+  <script>
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+  </script>
+
+</head>
+<header>
+<body ng-app="myApp" ng-controller="myCtrl" >
+
+<nav class="w3-sidebar w3-bar-block w3-large  w3-hide-small w3-center">
+  <a href="#!login" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user-circle-o w3-large"></i>
+    <h6>Најава</h6>
+  </a>
+  <a href="#!about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xlarge"></i>
+    <h6>За Нас</h6>
+  </a>
+  <a href="#!contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xlarge"></i>
+    <h6>Контакт</h6>
+  </a>
+  <a href="#!novosti" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-newspaper-o w3-xlarge"></i>
+    <h6>Новости</h6>
+  </a>
+  <a href="#!table" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-table w3-xlarge"></i>
+    <h6>Табела</h6>
+  </a>
+  <a href="lib/rez.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-list-alt w3-xlarge"></i>
+    <h6>Резултати</h6>
+  </a>
+  <a href="#!promocii" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-bullhorn w3-xlarge"></i>
+    <h6>Промоции</h6>
+  </a>
+  <a href="lib/logout.php" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-sign-out w3-xlarge" ></i>
+    <h6>Одлогирај се</h6>
+  </a>
+</nav>
+
+
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#!" class="w3-bar-item w3-button" style="width:20% ">Дома</a>
+    <a href="#!about" class="w3-bar-item w3-button" style="width:20% ">За Нас</a>
+    <a href="#!contact" class="w3-bar-item w3-button" style="width:20% ">Контакт</a>
+    <a href="#!table" class="w3-bar-item w3-button" style="width:20% ">Табела</a>
+    <a href="#!rezultati" class="w3-bar-item w3-button" style="width:20% ">Резултати</a>
+    <a href="#!novosti" class="w3-bar-item w3-button" style="width:20% ">Новости</a>
+    <a href="#!promocii" class="w3-bar-item w3-button" style="width:20% ">Промоции</a>
+  </div>
+</div>
+
+
+  <!-- <a class="w3-bar-item w3-button w3-padding-large w3-hover-black"  data-bs-toggle="dropdown"><i class="fa fa-soccer w3-xxlarge"> <b>Новости</b></i></a> -->
+      <!-- <ul class="dropdown-menu"> 
+       <li><a class="dropdown-item" href="#!fudbal"> Фудбал </a></li>
+        <li><a class="dropdown-item" href="#!rakomet"> Ракомет </a></li>
+       </ul> -->
+
+
+
+
+
+<!-- <br><br><br><br>
+    <nav class="navbar navbar-light navbar-expand-sm bg-light fixed-top ">
+        <div class="container">
+          <img src="assets/img/logo.jpg" alt="" width="100" height="50">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+<div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class= "navbar-nav ml-auto id=myMenu">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#!"><b>Табела</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#!about"><b>За Нас</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#!contact"><b>Контакт</b></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" aria-disabled="true" data-bs-toggle="dropdown" ><b>Новости</b></a>
+                      <ul class="dropdown-menu"> 
+                        <li><a class="dropdown-item" href="#!fudbal"> Фудбал </a></li>
+                        <li><a class="dropdown-item" href="#!rakomet"> Ракомет </a></li>
+                      </ul>
+                </li>
+                <li class="nav-item">
+                     <a class="nav-link active" href="#!promocii"><b>Промоции</b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#!rezultati"><b>Резултати</b></a>
+                </li>
+            </ul>
+          
+</div>
+        </div>
+    </nav>
+<br><br> -->
+  <!-- <form action="" method="" class="d-flex"> 
+                <input type="search" class="form-control me-3"  id="mySearch" onkeyup="myFunction()" placeholder="Пребарувај" onchange="openPage()"> 
+                <button type="submit" class="btn btn-outline-dark"> Пребарувај </button>
+            </form> -->
+
+
+
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<!-- <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="!#" class="w3-bar-item w3-button" style="width:25% !important">Дома</a>
+    <a href="!#about" class="w3-bar-item w3-button" style="width:25% !important">За Нас</a>
+    <a href="!#contact" class="w3-bar-item w3-button" style="width:25% !important">Контакт</a>
+    <a href="!#table" class="w3-bar-item w3-button" style="width:25% !important">Табела</a>
+    <a href="!#rezultati" class="w3-bar-item w3-button" style="width:25% !important">Резултати</a>
+  </div> -->
+
+<div ng-view></div>
+
+</header>
+</body>
+</html>
+
+
+
+<!-- FOOTER -->
+
+
+<!-- <footer class="bg-dark">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+                <h3>Социјални мрежи</h3>
+                <ul>
+                    <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="m fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="m fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="m fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="m fa fa-vimeo"></i></a></li>
+                    <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="m fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+                <h3>Новости</h3>
+                <ul>
+                    <li class="mb-2"><a href="#!fudbal" class="text-muted">Фудбал</a></li>
+                    <li class="mb-2"><a href="#!rakomet" class="text-muted">Ракомет</a></li>
+                    <li class="mb-2"><a href="index.html" class="text-muted">Резултати</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+                <h6 class="text-uppercase font-weight-bold mb-4">Претплатете се за новости</h6>
+                <div class="p-1 rounded border">
+                    <div class="input-group" >
+                      <input type="email" placeholder="name@example.com" aria-describedby="button-addon" class="form-control border-0 shadow-0">
+                      <div class="input-group-append">
+                        <button id="submit" type="submit" class="b btn btn-link"><i class="m fa fa-paper-plane"></i></button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          
+        </div>
+    </div>
+    <br><br>
+    <div class="bg-dark py-4">
+        <div class="container text-center">
+          <p class="text-muted mb-0 py-2 text-white"> <b>© Евротип | Спортски обложувалници 2022</b> </p>
+        </div>
+      </div>
+</footer> -->
+
+
